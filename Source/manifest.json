@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "BTC to mBTC",
+	"version": "1.0",
+	"description": "Replaces all instances of BTC with their equivalent in mBTC.",
+	"author": "Kevin Fang",
+	
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
